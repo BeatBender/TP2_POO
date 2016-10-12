@@ -119,25 +119,45 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Affichage.h" />
+    <ClInclude Include="Arbitre.h" />
     <ClInclude Include="Club.h" />
+    <ClInclude Include="Contrat.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="Entraineur.h" />
+    <ClInclude Include="Equipe.h" />
     <ClInclude Include="Joueur.h" />
+    <ClInclude Include="Joueur_autonome.h" />
+    <ClInclude Include="Joueur_n_autonome.h" />
     <ClInclude Include="LigueSoccer.h" />
+    <ClInclude Include="Match.h" />
     <ClInclude Include="Palmares.h" />
     <ClInclude Include="Parcours.h" />
+    <ClInclude Include="Periode.h" />
+    <ClInclude Include="Reglement.h" />
+    <ClInclude Include="Rencontres.h" />
+    <ClInclude Include="Resultat.h" />
     <ClInclude Include="Sportif.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Affichage.cpp" />
+    <ClCompile Include="Arbitre.cpp" />
     <ClCompile Include="Club.cpp" />
+    <ClCompile Include="Contrat.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Entraineur.cpp" />
+    <ClCompile Include="Equipe.cpp" />
     <ClCompile Include="Joueur.cpp" />
+    <ClCompile Include="Joueur_autonome.cpp" />
+    <ClCompile Include="Joueur_n_autonome.cpp" />
     <ClCompile Include="LigueSoccer.cpp" />
     <ClCompile Include="LigueSoccerApp.cpp" />
+    <ClCompile Include="Match.cpp" />
     <ClCompile Include="Palmares.cpp" />
     <ClCompile Include="Parcours.cpp" />
+    <ClCompile Include="Periode.cpp" />
+    <ClCompile Include="Reglement.cpp" />
+    <ClCompile Include="Rencontres.cpp" />
+    <ClCompile Include="Resultat.cpp" />
     <ClCompile Include="Sportif.cpp" />
   </ItemGroup>
   <ItemGroup>

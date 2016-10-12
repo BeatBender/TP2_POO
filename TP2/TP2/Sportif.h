@@ -5,13 +5,13 @@
 
 class Sportif
 {
+protected:
+	std::string nom;
+	std::string prenom;
+
 public:
 	Sportif();
 	~Sportif();
-
-protected:
-	string nom;
-	string prenom;
 };
 
 #endif

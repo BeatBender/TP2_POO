@@ -10,7 +10,7 @@ using namespace std;
 
 class Joueur: public Sportif
 {
-private:
+protected:
 	//Variables Joueur
 	float taille;
 	float poids;
