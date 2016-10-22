@@ -32,4 +32,3 @@ void Club::ajoutPalmares(string titre,string jours,string mois,string annee)
 	Palmares lePalmares(titre,laDate,this);
 	vect_palmares.insert(vect_palmares.begin(), lePalmares);
 }
-

@@ -40,6 +40,7 @@ void Affichage::afficherClub()
 
 	for(int i=0;i<nbClub;i++)
 		{
+		cout << i << ") ";
 		cout << "Nom du club :" << ligueSoccer->getClub(i)->getNom() << endl;
 		cout << "Histoire du club :" << ligueSoccer->getClub(i)->getHist() << endl;
 		cout << "Couleur du club :" << ligueSoccer->getClub(i)->getCoul() << endl;
@@ -274,4 +275,52 @@ void Affichage::afficherMeilleurClub(){
 	system("pause");
 
 
+}
+
+//Création du calendrier
+void Affichage::ajouterCalendrier()
+{
+	bool cont = 1;
+	int choix1, choix2;
+	string nomClub;
+	vector<Rencontres*> vecteur_rencontre;
+	Rencontres* ptr = NULL;
+	Date* ptr2 = NULL;
+	Club* ptr3 = NULL;
+	Club* ptr4 = NULL;
+
+	cout << "============ Calendrier ==============" << endl;
+
+	while (cont == 1)
+	{
+		ptr = new Rencontres;
+		ptr2 = new Date;
+		ptr3 = new Club;
+		ptr4 = new Club;
+
+		cout << "Entrez la date de la rencontre(jj mm aaaa): ";
+		ptr2->setJour(ptr2);
+		ptr2->setMois(ptr2);
+		ptr2->setAnnee(ptr2);
+		ptr->SetDateRencontre(ptr2);
+
+		cout << endl << "Choisissez le club local de la rencontre: ";
+		Affichage::afficherClub();
+		cin >> choix1;
+		*ptr3 = LigueSoccer::vect_club[choix1];
+		cout << endl << "Choisissez le club invite de la rencontre: ";
+		Affichage::afficherClub();
+		cin >> choix2;
+		*ptr4 = LigueSoccer::vect_club[choix2];
+		if (choix1 == choix2)
+		{
+			cout << "Erreur : Vous avez choisis les memes clubs." << endl;
+			return;
+		}
+		//rendu la
+
+		vecteur_rencontre.push_back(ptr);
+		cout << "Voulez-vous ajouter une autre rencontre? 1:Oui, 0:Non" << endl;
+		cin >> cont;
+	}
 }

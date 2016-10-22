@@ -33,5 +33,7 @@ public:
 	void afficherMeilleurEntraineur();
 	//Menu afficher le meilleur club
 	void afficherMeilleurClub();
+	//Création du calendrier
+	void ajouterCalendrier();
 };
 

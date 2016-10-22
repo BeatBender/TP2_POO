@@ -39,3 +39,27 @@ Match Rencontres::GetResultat()
 {
 	return this->resultat;
 }
+
+Date Rencontres::SetDateRencontre(Date* date)
+{
+	this->date_rencontre = *date;
+	return this->date_rencontre;
+}
+
+Club Rencontres::SetClubLocal(Rencontres* rencontre)
+{
+	this->club_local = rencontre->club_local;
+	return this->club_local;
+}
+
+Club Rencontres::SetClubInvite(Rencontres* rencontre)
+{
+	this->club_invite = rencontre->club_invite;
+	return this->club_invite;
+}
+
+Match Rencontres::SetResultat(Rencontres* rencontre)
+{
+	this->resultat = rencontre->resultat;
+	return this->resultat;
+}

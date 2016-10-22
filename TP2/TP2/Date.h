@@ -24,6 +24,11 @@ public:
 	string getJours(void){return jours;}
 	string getMois(void){return mois;}
 	string getAnnee(void){return annee;}
+
+	//SET
+	void setJour(Date*);
+	void setMois(Date*);
+	void setAnnee(Date*);
 };
 
 #endif

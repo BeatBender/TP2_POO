@@ -20,6 +20,12 @@ public:
 	Club GetClubInvite();
 	Match GetResultat();
 
+	//SET
+	Date SetDateRencontre(Date*);
+	Club SetClubLocal(Rencontres*);
+	Club SetClubInvite(Rencontres*);
+	Match SetResultat(Rencontres*);
+
 private:
 	Date date_rencontre;
 	Club club_local;

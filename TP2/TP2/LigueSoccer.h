@@ -4,7 +4,7 @@
 #include "Date.h"
 #include "Palmares.h"
 #include "Club.h"
-
+#include "Rencontres.h"
 
 
 #include "Entraineur.h"
@@ -22,7 +22,7 @@ class LigueSoccer
 {
 public:
 	//Variables
-	vector<Club> vect_club;
+	static vector<Club> vect_club;
 	vector<Entraineur> vect_entraineur;
 	
 	//Constructeur
