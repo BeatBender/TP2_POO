@@ -3,11 +3,21 @@
 #define REGLEMENT_H_
 #include <string>
 
+using namespace std;
+
 class Reglement
 {
 public:
 	Reglement();
+	Reglement(double, string, float, double, double);
 	~Reglement();
+
+	//Accesseur GET
+	double GetSeuil();
+	std::string GetDescriptionDroits();
+	float GetMontantTransfert();
+	double GetMontantEncaisseClub();
+	double GetMontantEncaisseJoueur();
 
 private:
 	double seuil;

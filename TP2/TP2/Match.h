@@ -6,11 +6,20 @@
 #include "Resultat.h"
 #include <list>
 
+using namespace std;
+
 class Match
 {
 public:
 	Match();
+	Match(Equipe, Equipe, list<Periode>, Resultat);
 	~Match();
+
+	//Accesseur GET
+	Equipe GetEquipeLocal();
+	Equipe GetEquipeAdverse();
+	list<Periode> GetListePeriode();
+	Resultat GetResultat();
 
 private:
 	Equipe equipe_local;

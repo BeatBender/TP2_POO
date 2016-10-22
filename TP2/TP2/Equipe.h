@@ -4,11 +4,19 @@
 #include "Club.h"
 #include "Joueur.h"
 
+using namespace std;
+
 class Equipe
 {
 public:
 	Equipe();
+	Equipe(Club, int, int, Joueur);
 	~Equipe();
+
+	//Accesseur GET
+	Club GetClub();
+	int GetNbJoueurGlace();
+	Joueur GetCapitaine();
 
 private:
 	Club club;

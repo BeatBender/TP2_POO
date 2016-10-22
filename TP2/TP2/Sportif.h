@@ -3,15 +3,22 @@
 #define SPORTIF_H_
 #include <string>
 
+using namespace std;
+
 class Sportif
 {
 protected:
-	std::string nom;
-	std::string prenom;
+	string nom;
+	string prenom;
 
 public:
 	Sportif();
+	Sportif(string, string);
 	~Sportif();
+
+	//Accesseur GET
+	string GetNom();
+	string GetPrenom();
 };
 
 #endif

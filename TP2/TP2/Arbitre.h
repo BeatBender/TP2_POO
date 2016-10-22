@@ -3,11 +3,19 @@
 #define ARBITRE_H_
 #include "Sportif.h"
 
+using namespace std;
+
 class Arbitre : public Sportif
 {
 public:
-	Arbitre();
+	Arbitre(string, string, string, int);
 	~Arbitre();
+
+	//Accesseur GET
+	string GetNom();
+	string GetPrenom();
+	string GetLieuObtention();
+	int GetExperience();
 
 private:
 	std::string lieu_obtention;

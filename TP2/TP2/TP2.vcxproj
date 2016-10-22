@@ -136,6 +136,7 @@
     <ClInclude Include="Reglement.h" />
     <ClInclude Include="Rencontres.h" />
     <ClInclude Include="Resultat.h" />
+    <ClInclude Include="Rupture.h" />
     <ClInclude Include="Sportif.h" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +159,7 @@
     <ClCompile Include="Reglement.cpp" />
     <ClCompile Include="Rencontres.cpp" />
     <ClCompile Include="Resultat.cpp" />
+    <ClCompile Include="Rupture.cpp" />
     <ClCompile Include="Sportif.cpp" />
   </ItemGroup>
   <ItemGroup>
