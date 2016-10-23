@@ -46,15 +46,15 @@ Date Rencontres::SetDateRencontre(Date* date)
 	return this->date_rencontre;
 }
 
-Club Rencontres::SetClubLocal(Rencontres* rencontre)
+Club Rencontres::SetClubLocal(Club* rencontre)
 {
-	this->club_local = rencontre->club_local;
+	this->club_local = *rencontre;
 	return this->club_local;
 }
 
-Club Rencontres::SetClubInvite(Rencontres* rencontre)
+Club Rencontres::SetClubInvite(Club* rencontre)
 {
-	this->club_invite = rencontre->club_invite;
+	this->club_invite = *rencontre;
 	return this->club_invite;
 }
 

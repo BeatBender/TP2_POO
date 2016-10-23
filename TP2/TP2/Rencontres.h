@@ -22,8 +22,8 @@ public:
 
 	//SET
 	Date SetDateRencontre(Date*);
-	Club SetClubLocal(Rencontres*);
-	Club SetClubInvite(Rencontres*);
+	Club SetClubLocal(Club*);
+	Club SetClubInvite(Club*);
 	Match SetResultat(Rencontres*);
 
 private:

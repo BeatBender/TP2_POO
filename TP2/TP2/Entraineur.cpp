@@ -1,5 +1,7 @@
 #include "Entraineur.h"
 
+using namespace std;
+
 //Constructeur
 Entraineur::Entraineur(void)
 {

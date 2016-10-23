@@ -23,6 +23,8 @@ void menuPrincipale(){
 	cout << "= 5) Afficher liste entraineurs" << endl;
 	cout << "= 6) Afficher l'entraineur le plus titre" << endl;
 	cout << "= 7) Afficher le club le plus titre" << endl;
+	cout << "= 8) Ajouter une rencontre au calendrier" << endl;
+	cout << "= 9) Afficher le calendrier des rencontres" << endl;
 	cout << endl << endl;
 	cout << "= 0) Quitter" << endl;
 	cout << endl << endl << "Votre choix : ";
@@ -63,6 +65,12 @@ int main()
 
 			case 7: affichage.afficherMeilleurClub();
 					break;
+
+			case 8: affichage.ajouterMatch();
+				break;
+
+			case 9: affichage.afficherCalendrier();
+				break;
 		
 			default : cout << "Choix invalide" << endl;
 			

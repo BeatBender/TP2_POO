@@ -1,10 +1,12 @@
 #include "Affichage.h"
+#include <vector>
+
+using namespace std;
 
 //Constructeur
 Affichage::Affichage(LigueSoccer* ligueSoccer)
 {
 	this->ligueSoccer = ligueSoccer;
-
 }
 
 //Ajout d'un Club
@@ -277,19 +279,19 @@ void Affichage::afficherMeilleurClub(){
 
 }
 
-//Création du calendrier
-void Affichage::ajouterCalendrier()
+//Ajout d'un match au calendrier
+void Affichage::ajouterMatch()
 {
+	system("cls");
 	bool cont = 1;
 	int choix1, choix2;
 	string nomClub;
-	vector<Rencontres*> vecteur_rencontre;
 	Rencontres* ptr = NULL;
 	Date* ptr2 = NULL;
 	Club* ptr3 = NULL;
 	Club* ptr4 = NULL;
 
-	cout << "============ Calendrier ==============" << endl;
+	cout << "============ Ajout au calendrier ==============" << endl << endl;
 
 	while (cont == 1)
 	{
@@ -317,10 +319,29 @@ void Affichage::ajouterCalendrier()
 			cout << "Erreur : Vous avez choisis les memes clubs." << endl;
 			return;
 		}
-		//rendu la
-
-		vecteur_rencontre.push_back(ptr);
+		ptr->SetClubLocal(ptr3);
+		ptr->SetClubInvite(ptr4);
+		LigueSoccer::GetVecteurRencontres().push_back(ptr);
 		cout << "Voulez-vous ajouter une autre rencontre? 1:Oui, 0:Non" << endl;
 		cin >> cont;
 	}
+	return;
 }
+
+//Afficher le calendrier
+void Affichage::afficherCalendrier()
+{
+	cout << "================ Calendrier ===================" << endl << endl;
+
+	for (int i = 0; i < sizeof(LigueSoccer::GetVecteurRencontres()); i++)
+	{
+		cout << "============= Match no." << i + 1 << " ===============: " << endl;
+		cout << "Club local: " << LigueSoccer::GetVecteurRencontres()[i]->GetClubLocal().getNom() << endl;
+		cout << "Club invite: " << LigueSoccer::GetVecteurRencontres()[i]->GetClubInvite().getNom() << endl;
+		cout << "Date de la rencontre: " << LigueSoccer::GetVecteurRencontres()[i]->GetDateRenctontre().getDateToString() << endl;
+		cout << "Resultat de la rencontre: " << LigueSoccer::GetVecteurRencontres()[i]->GetResultat().GetResultat().GetNbButsLocal() << " a " << LigueSoccer::GetVecteurRencontres()[i]->GetResultat().GetResultat().GetNbButsAdverse() << endl;
+	}
+	system("pause");
+	return;
+}
+

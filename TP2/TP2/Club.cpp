@@ -1,5 +1,7 @@
 #include "Club.h"
 
+using namespace std;
+
 //Constructeur par commandes
 Club::Club()
 {

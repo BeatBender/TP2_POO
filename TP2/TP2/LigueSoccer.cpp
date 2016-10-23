@@ -1,5 +1,6 @@
 #include "LigueSoccer.h"
 
+using namespace std;
 
 LigueSoccer::LigueSoccer(void)
 {
@@ -40,3 +41,7 @@ void LigueSoccer::ajouterJoueurAClub(string nom,string prenom,float taille,float
 	club->ajoutJoueur(nom,prenom,taille,poids,villeNaissance);
 }
 
+vector<Rencontres*> LigueSoccer::GetVecteurRencontres()
+{
+	return vecteur_rencontres;
+}

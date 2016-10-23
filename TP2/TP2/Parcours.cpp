@@ -1,6 +1,7 @@
 
 #include "Parcours.h"
 
+using namespace std;
 
 Parcours::Parcours(string nomClub,Date datePassage)
 {

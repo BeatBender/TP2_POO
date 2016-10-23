@@ -5,6 +5,7 @@
 #include <vector>
 #include "Joueur.h"
 #include "Club.h"
+#include "Rencontres.h"
 
 using namespace std;
 
@@ -15,6 +16,7 @@ private:
 	LigueSoccer* ligueSoccer;
 	
 public:
+	
 	//Constructeur
 	Affichage(LigueSoccer*);
 	//Ligue précodé
@@ -34,6 +36,9 @@ public:
 	//Menu afficher le meilleur club
 	void afficherMeilleurClub();
 	//Création du calendrier
-	void ajouterCalendrier();
+	void ajouterMatch();
+	//Afficher le calendrier
+	void afficherCalendrier();
+	
 };
 

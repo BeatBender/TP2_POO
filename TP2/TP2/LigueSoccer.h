@@ -5,11 +5,9 @@
 #include "Palmares.h"
 #include "Club.h"
 #include "Rencontres.h"
-
-
 #include "Entraineur.h"
 #include "Joueur.h"
-//#include "Parcours.h"
+#include "Parcours.h"
 #include <vector>
 #include <string>
 
@@ -23,6 +21,7 @@ class LigueSoccer
 public:
 	//Variables
 	static vector<Club> vect_club;
+	static vector<Rencontres*> vecteur_rencontres;
 	vector<Entraineur> vect_entraineur;
 	
 	//Constructeur
@@ -43,6 +42,7 @@ public:
 	Entraineur* getEntraineur(int i){return &vect_entraineur[i];}
 	int getNbEntraineur(void){return vect_entraineur.size();}
 	int getNbClub(void){return vect_club.size();}
+	static vector<Rencontres*> GetVecteurRencontres();
 };
 
 #endif
