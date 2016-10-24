@@ -1,1 +1,28 @@
-﻿
+﻿  Sportif.cpp
+  Rupture.cpp
+  Resultat.cpp
+  Rencontres.cpp
+  Reglement.cpp
+  Periode.cpp
+  Parcours.cpp
+  Palmares.cpp
+  Match.cpp
+  LigueSoccerApp.cpp
+  LigueSoccer.cpp
+  Joueur_n_autonome.cpp
+  Joueur_autonome.cpp
+  Joueur.cpp
+  Equipe.cpp
+  Entraineur.cpp
+  Date.cpp
+  Contrat.cpp
+  Club.cpp
+  Arbitre.cpp
+  Génération de code en cours...
+  Compilation en cours...
+  Affichage.cpp
+  Génération de code en cours...
+Affichage.obj : error LNK2001: symbole externe non résolu "public: static class std::vector<class Club,class std::allocator<class Club> > LigueSoccer::vect_club" (?vect_club@LigueSoccer@@2V?$vector@VClub@@V?$allocator@VClub@@@std@@@std@@A)
+LigueSoccer.obj : error LNK2001: symbole externe non résolu "public: static class std::vector<class Club,class std::allocator<class Club> > LigueSoccer::vect_club" (?vect_club@LigueSoccer@@2V?$vector@VClub@@V?$allocator@VClub@@@std@@@std@@A)
+LigueSoccer.obj : error LNK2001: symbole externe non résolu "public: static class std::vector<class Rencontres *,class std::allocator<class Rencontres *> > LigueSoccer::vecteur_rencontres" (?vecteur_rencontres@LigueSoccer@@2V?$vector@PAVRencontres@@V?$allocator@PAVRencontres@@@std@@@std@@A)
+D:\Users\PatrickBeatBender\Documents\GitHub\TP2_POO\TP2\Debug\TP2.exe : fatal error LNK1120: 2 externes non résolus

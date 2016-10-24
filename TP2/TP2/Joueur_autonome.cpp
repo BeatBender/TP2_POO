@@ -7,7 +7,7 @@ Joueur_autonome::Joueur_autonome()
 
 }
 
-Joueur_autonome::Joueur_autonome(string nom, string prenom, float taille, float poids, string villeN, vector<Parcours> parcours)
+Joueur_autonome::Joueur_autonome(string nom, string prenom, float taille, float poids, string villeN, vector<Parcours> parcours, Rupture contrat)
 {
 	this->nom = nom;
 	this->prenom = prenom;
@@ -15,6 +15,7 @@ Joueur_autonome::Joueur_autonome(string nom, string prenom, float taille, float 
 	this->poids = poids;
 	this->villeNaissance = villeN;
 	this->vect_parcours = parcours;
+	this->contrat = contrat;
 }
 
 Joueur_autonome::~Joueur_autonome()

@@ -1,4 +1,7 @@
 #pragma once
+#ifndef AFFICHAGE_H_
+#define AFFICHAGE_H_
+
 #include "LigueSoccer.h"
 #include <string>
 #include <iostream>
@@ -41,4 +44,6 @@ public:
 	void afficherCalendrier();
 	
 };
+
+#endif
 
