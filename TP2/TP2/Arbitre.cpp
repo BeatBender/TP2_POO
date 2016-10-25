@@ -17,6 +17,7 @@ Arbitre::~Arbitre()
 
 }
 
+//GET
 string Arbitre::GetNom()
 {
 	return this->nom;

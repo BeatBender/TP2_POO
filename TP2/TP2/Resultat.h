@@ -16,6 +16,7 @@ public:
 	int GetNbButsAdverse();
 
 private:
+	//Variables
 	int nb_buts_local;
 	int nb_buts_adverse;
 };

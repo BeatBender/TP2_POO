@@ -19,6 +19,7 @@ public:
 	Joueur GetCapitaine();
 
 private:
+	//Variables
 	Club club;
 	int nb_joueurs_glace, nb_gardiens;
 	Joueur capitaine;

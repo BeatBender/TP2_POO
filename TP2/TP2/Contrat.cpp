@@ -23,6 +23,7 @@ Contrat::~Contrat()
 
 }
 
+//GET
 Joueur Contrat::GetJoueurContractant()
 {
 	return this->joueurContractant;

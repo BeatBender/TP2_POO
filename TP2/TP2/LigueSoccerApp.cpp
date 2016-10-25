@@ -1,5 +1,14 @@
-// 8PRO114_TP_1_Console.cpp : définit le point d'entrée pour l'application console.
-//
+/*
+	8PRO114_TP_2_Console.cpp : définit le point d'entrée pour l'application console.
+	Patrick Levesque - LEVP19099302
+	Les classes ont été créés sans problème. J'ai aussi implémenté les héritages (Arbitre, Joueur autonome et non autonome) facilement.
+	J'ai ensuite implémenté le calendrier des rencontres. Depuis le début du TD, j'ai cru que c'est un club qui jouait dans un match.
+	Dernièrement, je me suis rendu compte que c'est une équipe qui joue dans un match. Mon calendrier décrit donc des matchs entre clubs.
+	J'ai voulu faire un vecteur static dans LigueSoccer pour stocker les rencontres. Une erreur est alors apparue, la LNK2001. Je n'ai pas été
+	capable de résoudre cette erreur malgré de l'aide que j'ai demandé à un collègue qui a déjà fait le cours. Vous verrez cette erreur en générant
+	la solution. Pour le reste des fonctions, j'ai bloqué sur plusieurs d'entre elles. J'en ai confondu quelques-unes, j'ai créé un calendrier et on peut
+	y ajouter des rencontres. Normalement, on aurait aussi pu afficher les rencontres, mais l'erreur LNK2001 m'a bloqué totalement.
+*/
 
 
 #include "LigueSoccer.h"

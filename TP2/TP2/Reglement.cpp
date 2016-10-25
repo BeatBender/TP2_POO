@@ -21,6 +21,7 @@ Reglement::~Reglement()
 
 }
 
+//GET
 double Reglement::GetSeuil()
 {
 	return this->seuil;

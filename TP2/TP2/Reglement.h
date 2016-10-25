@@ -14,14 +14,15 @@ public:
 
 	//Accesseur GET
 	double GetSeuil();
-	std::string GetDescriptionDroits();
+	string GetDescriptionDroits();
 	float GetMontantTransfert();
 	double GetMontantEncaisseClub();
 	double GetMontantEncaisseJoueur();
 
 private:
+	//Variables
 	double seuil;
-	std::string description_droits;
+	string description_droits;
 	float montant_transfert;
 	double montant_encaisse_club, montant_encaisse_joueur;
 };

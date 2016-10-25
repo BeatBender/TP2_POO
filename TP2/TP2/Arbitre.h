@@ -8,6 +8,7 @@ using namespace std;
 class Arbitre : public Sportif
 {
 public:
+	//Constructeurs
 	Arbitre(string, string, string, int);
 	~Arbitre();
 
@@ -18,7 +19,8 @@ public:
 	int GetExperience();
 
 private:
-	std::string lieu_obtention;
+	//Variables
+	string lieu_obtention;
 	int experience_arbitrage;
 };
 

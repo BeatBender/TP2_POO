@@ -20,6 +20,7 @@ Rupture::~Rupture()
 
 }
 
+//GET
 Joueur Rupture::GetJoueur()
 {
 	return this->joueur;

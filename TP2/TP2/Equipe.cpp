@@ -20,6 +20,7 @@ Equipe::~Equipe()
 
 }
 
+//GET
 Club Equipe::GetClub()
 {
 	return this->club;

@@ -18,6 +18,7 @@ Resultat::~Resultat()
 
 }
 
+//GET
 int Resultat::GetNbButsLocal()
 {
 	return this->nb_buts_local;

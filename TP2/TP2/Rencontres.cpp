@@ -20,6 +20,7 @@ Rencontres::~Rencontres()
 
 }
 
+//GET
 Date Rencontres::GetDateRenctontre()
 {
 	return this->date_rencontre;
@@ -40,6 +41,7 @@ Match Rencontres::GetResultat()
 	return this->resultat;
 }
 
+//SET
 Date Rencontres::SetDateRencontre(Date* date)
 {
 	this->date_rencontre = *date;

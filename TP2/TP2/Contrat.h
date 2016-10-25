@@ -23,6 +23,7 @@ public:
 	Date GetDateContrat();
 
 private:
+	//Variables
 	Joueur joueurContractant;
 	Club clubContractant;
 	Club clubLibere;

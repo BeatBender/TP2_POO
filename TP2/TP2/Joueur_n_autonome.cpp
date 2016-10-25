@@ -22,6 +22,8 @@ Joueur_n_autonome::~Joueur_n_autonome()
 {
 
 }
+
+//GET
 string Joueur_n_autonome::GetNom()
 {
 	return this->nom;

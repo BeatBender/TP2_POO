@@ -27,6 +27,7 @@ public:
 	Match SetResultat(Rencontres*);
 
 private:
+	//Variables
 	Date date_rencontre;
 	Club club_local;
 	Club club_invite;

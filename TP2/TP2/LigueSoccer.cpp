@@ -41,6 +41,7 @@ void LigueSoccer::ajouterJoueurAClub(string nom,string prenom,float taille,float
 	club->ajoutJoueur(nom,prenom,taille,poids,villeNaissance);
 }
 
+//Avoir le vecteur static des rencontres
 vector<Rencontres*> LigueSoccer::GetVecteurRencontres()
 {
 	return vecteur_rencontres;

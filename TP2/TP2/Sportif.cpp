@@ -19,6 +19,7 @@ Sportif::~Sportif()
 
 }
 
+//GET
 string Sportif::GetNom()
 {
 	return this->nom;

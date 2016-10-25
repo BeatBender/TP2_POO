@@ -19,6 +19,7 @@ Periode::~Periode()
 
 }
 
+//GET
 int Periode::GetDuree()
 {
 	return this->duree;

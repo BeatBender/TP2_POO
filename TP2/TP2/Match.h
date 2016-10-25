@@ -22,6 +22,7 @@ public:
 	Resultat GetResultat();
 
 private:
+	//Variables
 	Equipe equipe_local;
 	Equipe equipe_adverse;
 	list<Periode> liste_periodes;

@@ -8,6 +8,7 @@ using namespace std;
 class Sportif
 {
 protected:
+	//Variables
 	string nom;
 	string prenom;
 

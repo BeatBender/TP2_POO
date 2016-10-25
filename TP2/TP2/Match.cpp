@@ -20,6 +20,7 @@ Match::~Match()
 
 }
 
+//GET
 Equipe Match::GetEquipeLocal()
 {
 	return this->equipe_local;

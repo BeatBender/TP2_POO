@@ -21,6 +21,7 @@ public:
 	float GetPenalite();
 
 private:
+	//Variables
 	Joueur joueur;
 	string raison;
 	Club nouvClub;

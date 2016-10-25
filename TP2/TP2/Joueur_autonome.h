@@ -22,6 +22,7 @@ public:
 	vector<Parcours> GetVecteurParcours();
 
 private:
+	//Variable Rupture de contrat pour le joueur autonome
 	Rupture contrat;
 };
 
